@@ -53,8 +53,25 @@ Olist's 97% churn rate is not caused by operational failures. Statistical testin
 - **Category variation:** Even naturally repeatable categories (pet supplies, health/beauty) show only 4-5% repeat rates vs 25-40% industry benchmarks       
 - **Price and geography:** Order value and customer location show minimal variation in retention (all ~3%)
 
+### **The Root Cause**        
+Olist was positioned as a transactional marketplace for one-off purchases, not a relationship platform. Customers used it to find items unavailable locally or to experiment with online shopping, but didn't develop platform loyalty. This was compounded by:
+
+- Early-stage e-commerce trust issues in Brazil (2016-2018)
+- Marketplace anonymization (orders appeared under Mercado Livre branding)
+- Customer acquisition through price-shopping channels rather than brand building
+- Product mix weighted toward durable goods (furniture, appliances) purchased infrequently
+
+### **Business Impact**
+Current state vs. marketplace benchmarks:
+
+**Olist repeat rate:** 3.1%      
+**Typical marketplace benchmark:** 45-50%        
+**Gap:** 42-47 percentage points
 
 
+At 50,000 new customers per year and $120 average order value, closing even half this gap would represent **$3.6M in additional GMV annually** ($72 incremental value per customer × 50,000 customers).  
+
+However, **operational improvements cannot close this gap** because the problem is structural, not operational.
 
 
 
