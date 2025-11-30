@@ -197,6 +197,41 @@ Here is the output of the query:
 
 <img width="583" height="163" alt="Screenshot 2025-11-30 at 12 41 03 PM" src="https://github.com/user-attachments/assets/f064bffd-7b35-495f-a7a3-b23c008ebd20" />
 
+**Price doesn't matter:** 
+- Even customers spending $500+ only return 1.95% of the time.
+- If anything, higher spenders are LESS likely to return.
+
+
+```sql
+-- Repeat rate by customer state (top 10 states by volume)
+SELECT 
+    customer_state,
+    COUNT(DISTINCT customer_unique_id) as customers,
+    COUNT(DISTINCT CASE WHEN is_repeat_customer = 1 THEN customer_unique_id END) as repeat_customers,
+    ROUND(100.0 * COUNT(DISTINCT CASE WHEN is_repeat_customer = 1 THEN customer_unique_id END) / 
+          COUNT(DISTINCT customer_unique_id), 2) as repeat_rate_pct
+FROM (
+    SELECT DISTINCT ON (customer_unique_id)
+        customer_unique_id,
+        customer_state,
+        is_repeat_customer,
+        order_purchase_timestamp
+    FROM summary
+    WHERE order_status = 'delivered'
+    ORDER BY customer_unique_id, order_purchase_timestamp
+) first_orders
+GROUP BY customer_state
+HAVING COUNT(DISTINCT customer_unique_id) >= 1000
+ORDER BY customers DESC;
+```
+Here is the output of the query:
+
+<img width="457" height="323" alt="Screenshot 2025-11-30 at 12 49 38 PM" src="https://github.com/user-attachments/assets/d649a87a-14e8-4ca2-8967-0aadeeba7a9b" />
+
+**Geography doesn't matter:**
+- São Paulo (39k customers, most developed market) has 3.30% repeat rate.
+- Rural states like Ceará have 1.83%.
+- The range is 1.83% to 3.53% - essentially flat.
 
 
 
