@@ -24,7 +24,7 @@ Are customers leaving because of Olist's operational problems, or is this how Br
 **If structural:** Accept that retention will remain low and optimize acquisition efficiency instead.
 
 
-
+--------------------
 
 
 ### **Dataset Overview**
@@ -32,7 +32,9 @@ Are customers leaving because of Olist's operational problems, or is this how Br
 [View Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download)
 
 
-### **Key Metrics Analyzed:**
+---------------------------
+
+## **Key Metrics Analyzed:**
 
 - Customer retention and repeat purchase rates
 - Delivery performance (on-time vs late)
@@ -74,7 +76,7 @@ At 50,000 new customers per year and $120 average order value, closing even half
 However, **operational improvements cannot close this gap** because the problem is structural, not operational.
 
 
-
+-------------------------------
 
 
 # **Analysis & Diagnosis**
@@ -200,14 +202,14 @@ A 0.6 percentage point difference between best and worst possible experiences me
 
 ---
 
-## **Recommendations**
+# **Recommendations**
 
 ### What Olist Cannot Fix
 - **Delivery speed:** Olist is a SaaS platform; sellers control logistics
 - **Seller quality at scale:** Removing bad sellers risks losing marketplace breadth
 - **Market trust in e-commerce:** Brazil's online shopping adoption was early-stage in 2016-2018
 
-### **Option 1: Stop Fighting Retention—Optimize for Acquisition Efficiency**               
+### **Option 1: Stop Fighting Retention—Optimize for Acquisition Efficiency**
 **Recommended**
 
 **The strategy:** Accept the 3% baseline and stop wasting budget on retention programs that don't work.
@@ -227,7 +229,7 @@ A 0.6 percentage point difference between best and worst possible experiences me
 
 ---
 
-### **Option 2: Shift Category Mix—Build on the 11%**              
+### **Option 2: Shift Category Mix—Build on the 11%**
 **Recommended**
 
 **The strategy:** Home appliances show 11% repeat rate (3.5× average). Double down on what works.
@@ -270,7 +272,7 @@ A 0.6 percentage point difference between best and worst possible experiences me
 
 ---
 
-## Final Recommendation
+# **Final Recommendation**
 
 **Implement Option 1 + Option 2 together.**
 
